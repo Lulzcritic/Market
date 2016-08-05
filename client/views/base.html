@@ -1,0 +1,29 @@
+<template name="base">
+<head>
+  <title>PinkyMilky</title>
+</head>
+<body>
+    {{#if currentUser}}
+    <nav class="navbar navbar-default navbar-fixed-top mybar">
+    <div class="container">
+      <ul class="nav navbar-nav">
+        <li><a href="/market">Market</a></li>
+        <li><a href="/compte">Mon compte</a></li>
+        <li><a href="/myownmarket">Mon magasin</a></li>
+        <li><a href="/chat">Chat</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <a class="navbar-brand">Bonjour {{currentUser.username}}</a>
+        <li><a href="/" class="logout">Deconnexion</a></li>
+      </ul>
+    </div>
+  </nav>
+    {{else}}
+    
+    {{/if}}
+    {{> yield}}
+</body>
+<footer>
+    
+</footer>
+</template>

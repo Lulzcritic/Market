@@ -1,0 +1,19 @@
+<template name="chat">
+    <div class="container">
+        <div class="row">
+            <center>
+            <form class="send">
+                <textarea name="message" class="form-control" rows="5" placeholder="Message"></textarea><br />
+                <button class="btn btn-default" type="submit" enabled="true">Envoyer</button>
+            </form>
+            </center>
+            
+            {{#each chatroom}}
+            <div class="msg">
+                {{author}} : {{msg}}
+            </div>
+            {{/each}}
+            
+        </div>
+    </div>
+</template>

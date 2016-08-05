@@ -1,0 +1,28 @@
+<template name="acceuil">
+    <div class="container">
+        <div class="row">
+            <center><h1>PinkyMilky</h1></center>
+        </div>
+    </div>
+    
+        <div class="container log">
+            <div class="row">
+                <form class="verify col-md-6">
+                    <center>
+                    <div class="input-group">
+                        <center><h2>Clé d'invitation</h2><input type="text" class="form-control" name="cle"/><br /><br/>
+                        <button class="btn btn-default thedis" type="submit">Try it</button></center>
+                    </div>
+                    </center>
+                </form>
+                
+                <div class="col-md-6 thelog">
+                    {{>login}}
+                </div>
+                
+                <div id="secret">
+                    {{>Template.dynamic template=inscription}}
+                </div>
+            </div>
+        </div>
+</template>

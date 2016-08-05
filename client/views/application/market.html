@@ -1,0 +1,23 @@
+<template name="market">
+    
+    {{#if currentUser}}
+    
+    <div class="container">
+        <div class="row">
+            {{#each market}}
+            <div class="article col-md-12">
+                <h1>{{title}}</h1>
+                <p>{{description}}</p>
+                <p>EUR : {{price}}</p>
+                <p>stock : {{quantity}}</p>
+                par <em>{{author}}</em>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+    
+    {{else}}
+        <center><h1>EEhhhh non la hein tu n'es pas connecté</h1></center>
+    {{/if}}
+    
+</template>

@@ -1,0 +1,49 @@
+body {
+    background-color: rgb(61,54,54);
+    /*background: url('http://meteor-test-d3falt.c9users.io/meteor_test/client/ressources/dark_exa.png') repeat 0 0;*/
+    color: rgb(255,255,255);
+    font-family: sans-serif;
+}
+
+.article {
+    border-style: groove;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    color : rgb(0,0,0);
+    background-color: #f2f2f2;
+    border-color: #f2f2f2;
+}
+
+.log {
+    margin-top: 100px;
+}
+
+.thelog {
+    border-left-style: groove;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+}
+
+.ins {
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+.mybar {
+    position: relative;
+}
+
+.add_article {
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+.msg {
+    padding-top: 10px;
+    border-bottom-style: ridge;
+    border-bottom-color: #00bb00;
+}
